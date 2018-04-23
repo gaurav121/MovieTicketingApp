@@ -20,16 +20,16 @@ public class Role {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="roleid")
-	private int roleID;
+	private long roleID;
 	
 	@Column(name="role")
 	private String role;
 	
-	public int getRoleID() {
+	public long getRoleID() {
 		return roleID;
 	}
 
-	public void setRoleID(int roleID) {
+	public void setRoleID(long roleID) {
 		this.roleID = roleID;
 	}
 

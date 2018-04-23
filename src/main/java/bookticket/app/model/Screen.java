@@ -15,11 +15,11 @@ public class Screen {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int screenID;
+	private long screenID;
 	
-	private int totalSeats;
+	private long totalSeats;
 
-	private int bookedSeats;
+	private long bookedSeats;
 	
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="theatreID")
@@ -30,27 +30,27 @@ public class Screen {
 	System.out.println("screen created");
 	}
 
-	public int getScreenID() {
+	public long getScreenID() {
 		return screenID;
 	}
 
-	public void setScreenID(int screenID) {
+	public void setScreenID(long screenID) {
 		this.screenID = screenID;
 	}
 
-	public int getTotalSeats() {
+	public long getTotalSeats() {
 		return totalSeats;
 	}
 
-	public void setTotalSeats(int totalSeats) {
+	public void setTotalSeats(long totalSeats) {
 		this.totalSeats = totalSeats;
 	}
 
-	public int getBookedSeats() {
+	public long getBookedSeats() {
 		return bookedSeats;
 	}
 
-	public void setBookedSeats(int bookedSeats) {
+	public void setBookedSeats(long bookedSeats) {
 		this.bookedSeats = bookedSeats;
 	}
 	

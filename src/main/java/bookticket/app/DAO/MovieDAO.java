@@ -2,20 +2,27 @@ package bookticket.app.DAO;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 import bookticket.app.model.Movie;
 
-public interface MovieDAO {
+@Repository
+@Transactional
+public interface MovieDAO extends JpaRepository<Movie, Long>{
 
 
-	public List<Movie> getAllMovie();
+	public List<Movie> findAll();
 
-	public Movie getMovieDetails(int movieID);
+	public Movie findByMovieID(int movieID);
 	
-	public Movie getMoviebyCity(String city);
+	public Movie findByCity(String city);
 	
-	public Movie addnewMovie(Movie movie);
+	//public Movie addnewMovie(Movie movie);
 	
-	public Movie updateMovie(Movie movie);
+	//public Movie update(Movie movie);
 	
 	
 }

@@ -2,6 +2,7 @@ package bookticket.app.service;
 
 import java.util.List;
 
+import bookticket.app.DTO.MovieDTO;
 import bookticket.app.model.Movie;
 
 /**
@@ -10,9 +11,11 @@ import bookticket.app.model.Movie;
  *17-Apr-2018 
  *BookMyShow
  */
+
+
 public interface MovieService {
 
-	public List<Movie> getallMovies();
+	public List<MovieDTO> getallMovies();
 	
 	public Movie getMovieDetails(int movieID);
 	

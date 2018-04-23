@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -23,10 +22,12 @@ import javax.persistence.Table;
 @Table(name="user")
 public class User {
 
+	
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.TABLE ) 
 	@Column(name="userid")
-	private int userID;
+	private long userID;
 	
 	
 	private String userType;
@@ -56,13 +57,13 @@ public class User {
 
 
 
-	public int getUserID() {
+	public long getUserID() {
 		return userID;
 	}
 
 
 
-	public void setUserID(int userID) {
+	public void setUserID(long userID) {
 		this.userID = userID;
 	}
 

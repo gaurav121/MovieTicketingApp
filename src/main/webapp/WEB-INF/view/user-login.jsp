@@ -18,6 +18,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+${testing}
+${testing2}
 
 <h2 align="center" style="color: purple;">Please provide valid username/password!!</h2>
 

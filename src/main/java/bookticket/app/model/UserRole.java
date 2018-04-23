@@ -20,6 +20,6 @@ public class UserRole {
 	
 	@Column(name="userid")
 	
-	private int userID;
+	private long userID;
 	
 }

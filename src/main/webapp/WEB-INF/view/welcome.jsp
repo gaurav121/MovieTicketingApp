@@ -5,6 +5,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+<style type="text/css">
+	.form{color:maroon;}
+</style>	
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome</title>
 </head>
@@ -16,6 +21,13 @@
 		<p align="right" style="color: fuchsia;"><input type="submit" value="Logout"></p>
 </form:form>
 </p>
+
+<h2 class="form" align="justify">WelcomeUser</h2>
+
+
+
+<!-- <a href="${pageContext.request.contextPath}/movie/showMovieList">Book Movie jsp</a> -->
+<a href="${pageContext.request.contextPath}/movie/movieslist">Book Movie</a>
 
 </body>
 </html>

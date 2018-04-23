@@ -26,7 +26,7 @@ public class MovieTheatre {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int theatreID;
+	private long theatreID;
 	
 	@NotNull
 	private String theatreName;
@@ -39,12 +39,12 @@ public class MovieTheatre {
 	private List<Screen> screenID;
 
 
-	public int getTheatreID() {
+	public long getTheatreID() {
 		return theatreID;
 	}
 
 
-	public void setTheatreID(int theatreID) {
+	public void setTheatreID(long theatreID) {
 		this.theatreID = theatreID;
 	}
 
